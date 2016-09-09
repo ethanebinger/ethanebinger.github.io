@@ -1,3 +1,0 @@
-# ethanebinger.github.io
-
-Hello
