@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ethan Ebinger - Home</title>
+	   
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- D3 -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+        <!-- OpenLayers -->
+        <!--<script src="https://openlayers.org/en/v4.4.1/build/ol.js"></script>-->
+        
+        <!-- Stylesheet and Javascript -->
+        <link rel="stylesheet" href="ee_website.css">
+        <script src="ee_website.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            
+            <a href="./about.html">
+                <h1 class="intro_text">ETHAN EBINGER</h1>
+                <p class="intro_text_2">GIS || Geology || Ceramics</p>
+            </a>
+            
+            <div id="map">
+            </div>
+            
+            <div id="header">
+                <div id="header_title">
+                    <h3>
+                        <a href="./index.html" class="link">Ethan Ebinger</a>
+                    </h3>
+                </div>
+                <nav id="header_buttons">
+                    <a href="./about.html" class="link">About</a>
+                    <a href="./ceramics.html" class="link">Ceramics</a>
+                </nav>
+            </div>
+
+            <div class="footer" id="footer_map">
+                <div id="social_links">
+                    <a href="http://www.github.com/eebinger">
+                       <img src="images/social_media_logos/GitHub/PNG/GitHub-Mark-Light-120px-plus.png"/>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ethan-ebinger">
+                        <img src="images/social_media_logos/LinkedIn_81_TM.png"/>
+                    </a>
+                    <a href="https://twitter.com/EzSquared">
+                         <img src="images/social_media_logos/TwitterLogo_blue.png"/>
+                    </a>
+                    <!--<a href="http://instagram.com/"></a>-->
+                    <a href="https://www.facebook.com/ethanebinger">
+                       <img src="images/social_media_logos/FB-f-Logo__blue_100.png"/>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+ 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                init();
+            });
+		</script>
+        
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ethan Ebinger - About</title>
+	   
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- D3 -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+        <!-- Stylesheet and Javascript -->
+        <link rel="stylesheet" href="ee_website.css">
+        <!--<script src="ee_website.js" type="text/javascript"></script>-->
+
+    </head>
+    <body>
+        <div id="main">
+            
+            <div id="header">
+                <div id="header_title">
+                    <h3>
+                        <a href="./index.html" class="link">Ethan Ebinger</a>
+                    </h3>
+                </div>
+                <nav id="header_buttons">
+                    <a href="./about.html" class="link">About</a>
+                    <a href="./ceramics.html" class="link">Ceramics</a>
+                </nav>
+            </div>
+            
+            <div id="about_page">
+                <h2>About</h2>
+                <div>
+                    <img id="ethan" src="images/Ethan_at_TandemCoffee.jpg" />
+                    <div id="ethan_description">
+                        <!-- Long Bio -->
+                        
+                        <h3>GIS Programmer/Analyst</h3>
+                        <p>
+                            I currently work as a GIS Programmer/Analyst for the <a href="ctps.org" style="color: black">Boston Metropolitan Planning Organization's Central Transportation Staff</a>. I develop web applications, conduct spatial analysis, and produce cartography to support regional transportation planning for the Boston Metropolitan Region. 
+                        <p>
+                            I am interested in environmental and urban planning, and am exploring the uses of GIS and programming to improve transportation access around Boston.
+                        </p>
+                        <p>
+                            A current project involves using web map APIs to query travel times and flow speeds along corridors in the Boston region. Such open source data can be used to validate transit models and build on the spatial coverage of existing datasets. The working project can be found <a href="http://www.github.com/eebinger" style="color: black">here</a>.
+                        </p>
+                        <h3>Planetary Geology</h3>
+                        <p>
+                            I graduated from Brown University in 2016 with a Sc. B. in Geological Sciences. I completed and received honors for my senior thesis on the extent, diversity, and formation mechanisms of curvilinear ridges in the Nilosyrtis Highlands of Mars. Abstracts on my research were presented at the Lunar and Planetary Science Conference in <a href="https://www.hou.usra.edu/meetings/lpsc2015/pdf/2034.pdf" style="color: black">2015</a> and <a  href="https://www.hou.usra.edu/meetings/lpsc2016/pdf/2731.pdf" style="color: black">2016</a>, and a formal paper is in the works.
+                        </p>
+                        <p>
+                            My research interests are focused on planetary geomorphology, specifically the remote sensing of surficial features on Mars.
+                        </p>
+                        <h3>Wheel-Thrown Pottery</h3>
+                        <p>
+                            In my spare time I create wheel-thrown pottery. I am currently honing my skills and plan to sell my work in the near future. In the meantime, <a  href="./ceramics.html" style="color: black">check out</a> what I have made so far!
+                        </p>
+                        <h3>Contact</h3>
+                        <p>
+                            <a class="js-email-link" href="#" style="color: black">Email me</a>
+                            <br>
+                            <a href="https://twitter.com/ezsquared" style="color: black">Follow me on Twitter</a>
+                        </p>
+                        
+                        <!-- Short Bio -->
+                        <!--
+                        <p>
+                            I currently work as a GIS Programmer/Analyst for the Boston Metropolitan Planning Organization's <a href="ctps.org"> Central Transportation Planning Staff</a>. I develop web applications, conduct spatial analysis, and produce cartography to support regional transportation planning for the Boston Metropolitan Region.
+                        </p>
+                        <p>
+                            Previously I was a student at Brown University, where I studied Geologic Sciences. My research interests are focused on planetary geomorphology, specifically the remote sensing of surficial features on Mars. See my full work and scholastic history at <a href="https://www.linkedin.com/in/ethanebinger">LinkedIn</a>.
+                        </p>
+                        <p>
+                            In my spare time I create <a  href="./ceramics.html" style="color: black">wheel-thrown pottery</a>, play ultimate frisbee, and run a Survivor fantasy league with my friends.
+                        </p>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <div id="social_links">
+                    <a href="http://www.github.com/eebinger">
+                       <img src="images/social_media_logos/GitHub/PNG/GitHub-Mark-Light-120px-plus.png"/>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ethan-ebinger">
+                        <img src="images/social_media_logos/LinkedIn_81_TM.png"/>
+                    </a>
+                    <a href="https://twitter.com/EzSquared">
+                         <img src="images/social_media_logos/TwitterLogo_blue.png"/>
+                    </a>
+                    <!--<a href="http://instagram.com/"></a>-->
+                    <a href="https://www.facebook.com/ethanebinger">
+                       <img src="images/social_media_logos/FB-f-Logo__blue_100.png"/>
+                    </a>
+                </div>
+            </footer>
+            
+        </div>
+        
+    </body>
+    <script type="text/javascript">
+        function ready(fn) {
+            if (document.readyState != 'loading'){
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+            };
+        };
+
+        function enableEmailLinks() {
+            var emailLinks = document.querySelectorAll('.js-email-link')
+            for (var i =0; i < emailLinks.length; i++) {
+                emailLinks[0].addEventListener('click', function(event) {
+                    var a = "ethanebinger@";
+                    var b = "gmail.com";
+                    window.open("mailto:" + a + b, 'email');
+                    return false;
+                });
+            };
+        };
+
+        ready(function() {
+            enableEmailLinks();
+        });
+    </script>
+</html>
