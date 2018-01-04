@@ -1,0 +1,237 @@
+/********************/
+/*	DOM Formatting  */
+/********************/
+html, body, #main {
+    width: 100%;
+    height: 100%; 
+    padding: 0px; 
+    margin: 0px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+#main {
+    min-height:100%;
+    position:relative;
+}
+
+/********************/
+/*      Header      */
+/********************/
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: #fff;
+    background-color: #111;
+}
+
+#header_title {
+    float: left;
+    margin-left: 5%;
+    padding: 0px 5px;
+    letter-spacing: 5px;
+}
+
+#header_buttons {
+    float: right;
+    margin: 18px;
+}
+
+#header_buttons a {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 12px 10px;
+}
+
+#header_buttons a:hover {
+    background-color: #333;
+}
+
+.link {
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+}
+
+/***************/
+/*	Home Page  */
+/***************/
+
+#map {
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 32px 0;
+    z-index: 0;
+}
+
+.intro_text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    z-index: 100;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.intro_text_2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 48%;
+    z-index: 100;
+    color: #fff;
+}
+
+/****************/
+/*	About Page  */
+/****************/
+
+#about_page {
+    display: table;
+    margin: 0 auto;
+    /*width: 100%;*/
+    width: 480px;
+    height: 100%;
+    padding: 60px 0 32px 0;
+}
+
+#about_page h2  {
+    display: table;
+    margin: auto; 
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 30px;
+}
+
+#ethan {
+    width: 400px;
+    height: 420px;
+    display: table;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#ethan_description {
+    /*text-align: center;*/
+}
+
+/*******************/
+/*	Ceramics Page  */
+/*******************/
+
+#ceramics_page {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 32px 0;
+}
+
+#ceramics_page h2  {
+    display: table;
+    margin: auto; 
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 30px;
+}
+
+#photos {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.gallery {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 49.99999%;
+}
+
+@media only screen and (max-width: 900px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/*.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}*/
+
+/***********************/
+/*      Footer(s)      */
+/***********************/
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    height: 32px;
+    color: #fff;
+    background-color: #111;
+}
+
+#footer_map {
+    position: absolute;
+}
+
+.footer a img{
+    float: right;
+    height: 28px;
+    margin: 2px;
+    margin-right: 15px;
+}
+
+/****************/
+/*	d3 Tooltip  */
+/****************/
+.d3-tip {
+	line-height: 1;
+	font-weight: bold;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 2px;
+	text-align: left;
+	position: absolute;
+	z-index: 100;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+
+/***************************************************/
+/*      Hide Some of the Leaflet Map Controls      */
+/***************************************************/
+
+.leaflet-control-zoom {
+    visibility: hidden;
+}
+
+
