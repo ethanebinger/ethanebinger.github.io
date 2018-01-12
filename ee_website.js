@@ -62,7 +62,7 @@ function init() {
         var opmAttribution = '<a href="https://github.com/openplanetary/opm/wiki/OPM-Basemaps" target="blank">OpenPlanetaryMap</a>'
 
         var OPM_MarsBasemap = new L.tileLayer(baseUrl + 'mola-gray/{z}/{x}/{y}.png', {
-            maxNativeZoom: 9,
+            //maxNativeZoom: 9,
             zoom: 3,
 	    minZoom: 1,
             tms: true,
