@@ -46,11 +46,7 @@ function init() {
     };
     
     var initMap = function(){
-        // All this from: http://openplanetarymap.org/basemaps/#1/-70/229
-        // Need to decide whether to keep using Leaflet or switch to OpenLayers for the rest of this.....
-        
-        // Reason to stay with Leaflet: http://zevross.com/blog/2014/09/30/use-the-amazing-d3-library-to-animate-a-path-on-a-leaflet-map/
-        
+        // From: http://openplanetarymap.org/basemaps/#1/-70/229
         map = L.map('map', {
             // Zoom and Center on Nili Fossae
             center: [23.34, 78.06], 
@@ -68,6 +64,7 @@ function init() {
         var OPM_MarsBasemap = new L.tileLayer(baseUrl + 'mola-gray/{z}/{x}/{y}.png', {
             maxNativeZoom: 9,
             zoom: 3,
+	    minZoom: 1,
             tms: true,
             attribution: 'NASA/MOLA | ' + opmAttribution
         }).addTo(map).setZIndex(0);
