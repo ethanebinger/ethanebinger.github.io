@@ -116,6 +116,19 @@ html, body, #main {
     /*text-align: center;*/
 }
 
+/****************/
+/*	About Page  */
+/****************/
+
+#gis_page {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 32px 0;
+    text-align: center;
+}
+
 /*******************/
 /*	Ceramics Page  */
 /*******************/
