@@ -200,6 +200,10 @@ html, body, #main {
     transform: rotate(90deg);
 }
 
+img {
+    image-orientation: from-image;
+}
+
 /***********************/
 /*      Footer(s)      */
 /***********************/
