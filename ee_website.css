@@ -158,17 +158,20 @@ html, body, #main {
 }
 
 .gallery {
-    border: 1px solid #ccc;
+    /*border: 1px solid #ccc;*/
     margin-bottom: 10px;
+    overflow: hidden;
 }
-
-/*.gallery:hover {
-    border: 1px solid #777;
-}*/
 
 .gallery img {
     width: 100%;
     height: auto;
+    /*image-orientation: from-image;*/
+    border: 1px solid #ccc;
+}
+
+.gallery img:hover {
+    border: 1px solid #777;
 }
 
 .desc {
@@ -198,12 +201,7 @@ html, body, #main {
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    overflow: hidden;
 }
-
-/*img {
-    image-orientation: from-image;
-}//*/
 
 /***********************/
 /*      Footer(s)      */
