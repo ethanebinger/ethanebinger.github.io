@@ -117,10 +117,10 @@ html, body, #main {
 }
 
 /****************/
-/*	About Page  */
+/*	Projects Page  */
 /****************/
 
-#gis_page {
+#projects_page {
     display: table;
     margin: 0 auto;
     width: 100%;
