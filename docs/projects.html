@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ethan Ebinger - GIS</title>
+	   
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- D3 -->
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        
+        <!-- Stylesheet and Javascript -->
+        <link rel="stylesheet" href="ee_website.css">
+        <link rel="stylesheet" href="/bluebikes_tripmap/bluebikes_tripmap.css">
+        <script src="/bluebikes_tripmap/bluebikes_tripmap.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            <div id="header">
+                <div id="header_title">
+                    <h3>
+                        <a href="./index.html" class="link">Ethan Ebinger</a>
+                    </h3>
+                </div>
+                <nav id="header_buttons">
+                    <a href="./about.html" class="link">About</a>
+                    <a href="./projects.html" class="link">Projects</a>
+                    <a href="./ceramics.html" class="link">Ceramics</a>
+                </nav>
+            </div>
+            <div id="projects_page">
+                <h2>Projects</h2>
+                <div width="80%">
+                    <div class="tab">
+                        <button class="tablinks" name="BlueBikes" id="defaultOpen">Exploring Blue Bikes Trips</button>
+                        <button class="tablinks" name="OneWayStreets">Web Map APIs: Validating One-Way Streets in GIS</button>
+                        <button class="tablinks" name="BingTravelTime">Web Map APIs: Querying Travel Times</button>
+                        <button class="tablinks" name="Survivor">Fantasy Survivor</button>
+                    </div>
+
+                    <div id="BlueBikes" class="tabcontent">
+                        <h3>Exploring Blue Bikes Trips</h3>
+                        <p>
+                            
+                        </p>
+                        <div id="bluebikes_tripmap">
+                            <h2>
+                                <span id="trips_date"></span><br>
+                                <span id="cur_station">BlueBikes Trips</span><br>
+                                <span id="num_trips"></span><br>
+                                <span id="freq_dest"></span>
+                            </h2>
+                            <div class="dropdown" style="float:right;">
+                                <button class="dropbtn">Date</button>
+                                <div class="dropdown-content">
+                                    <!--<a href="#" id="201806">June, 2018</a>-->
+                                    <!--<a href="#" id="201805">May, 2018</a>-->
+                                    <a href="#" id="201804">April, 2018</a>				
+                                    <a href="#" id="201803">March, 2018</a>
+                                    <a href="#" id="201802">February, 2018</a>
+                                    <a href="#" id="201801">January, 2018</a>
+                                </div>
+                            </div>
+                            <h1 id="loading">LOADING...</h1>
+                        </div>
+                    </div>
+
+                    <div id="OneWayStreets" class="tabcontent">
+                        <h3>Web Map APIs: Validating One-Way Streets in GIS</h3>
+                        <p>Details coming soon!</p>
+                        <p>In the meantime, check out the Github repo with details on the project <a href="https://github.com/eebinger/OneWayStreetValidation">here</a>.</p>
+                    </div>
+                    <div id="BingTravelTime" class="tabcontent">
+                        <h3>Web Map APIs: Querying Travel Times</h3>
+                        <p>Details coming soon!</p>
+                        <p>In the meantime, check out the Github repo with details on the project <a href="https://github.com/ethanebinger/BingTravelTime">here</a>.</p>
+                    </div>
+                    <div id="Survivor" class="tabcontent">
+                        <h3>Fantasy Survivor</h3>
+                        <p>Details coming soon!</p>
+                        <p>In the meantime, check out the Github repo with details on the project <a href="https://github.com/ethanebinger/Fantasy-Survivor">here</a>.</p>
+                        <p>And the working application, with results from Season 36: Ghost Island can be found <a href="http://ethanebinger.com/Fantasy-Survivor/GhostIsland/results.html">here</a>. Congratulations to Josh for winning our season's tourney!</p>
+                        <!--
+                        <p>
+                            A couple years ago my friends got my addicted to the TV show Survivor. Now on its 37th season, Survivor has been on the air since ____. _____.
+                        </p>
+                        <p>
+                            Weekly watch parties started as two people catching up on our week with Survivor in the background. We would find the weirdest beers at the local store to try and then watch the Wednesday Night Rivalry hockey game after the episode. Slowly, our Wednesday evening tradition evolved. Criticisms of players on the island became thorough analysis of moves they should have made. _____. Being competetive people we decided to start hedging bets on the game. Who will win the immunity challenge? Who will be voted off? Who will be the final Survivor? 
+                        </p>
+                        <p>
+                            We started keeping score during Season 35: Heroes vs. Healers vs. Hustlers. A Google Form was created and predictions were tallied up in a spreadsheet after the episode each week. Although the formula was relatively simple, organizing the form, calculating weekly scores, and informating participants of their totals was time consuming.
+                        </p>
+                        <p>
+                            I figured this could be a great project to practice my web development skills. Although still very rudimentary, below are the results from Survivor Season 36: Ghost Island.
+                        </p>
+                        <embed src="http://ethanebinger.com/Fantasy-Survivor/GhostIsland/results.html" width="80%" height="80%">
+                        <p>
+                            A basic html webform was used to collect responses, which were then saved in a JSON in GitHub. Some of the weekly questions included:
+                        </p>
+                        <ul>
+                            <li>
+                            </li>
+                        </ul>
+                        <p>
+                            The interactive chart displaying the weekly and total scores was built using D3. And users could view their weekly responses and points breakdown on the linked responses page.
+                        </p>
+                        <p>
+                            There is MUCH to do to improve this little application. For future seasons I would like to ____.
+                        </p>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div id="social_links">
+                    <a href="http://www.github.com/ethanebinger">
+                       <img src="images/social_media_logos/GitHub-Mark-Light-120px-plus.png"/>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ethan-ebinger">
+                        <img src="images/social_media_logos/LinkedIn_81_TM.png"/>
+                    </a>
+                    <a href="https://twitter.com/EzSquared">
+                         <img src="images/social_media_logos/TwitterLogo_blue.png"/>
+                    </a>
+                    <!--<a href="http://instagram.com/"></a>-->
+                    <a href="https://www.facebook.com/ethanebinger">
+                       <img src="images/social_media_logos/FB-f-Logo__blue_100.png"/>
+                    </a>
+                </div>
+            </footer>   
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".tab button").click(function(e) {
+                    $(".tabcontent").hide()
+                    var projectID = $(this).attr("name");
+                    $("#"+projectID).show();
+                    
+                    $(".tablinks").removeClass("active");
+                    $(this).addClass("active");
+                });
+                $("#defaultOpen").click();
+                init_bikemap();
+            });
+		</script>
+        
+    </body>
+</html>
