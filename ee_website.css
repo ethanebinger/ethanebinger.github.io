@@ -237,6 +237,7 @@ html, body, #main {
 }
 
 .rotate90 {
+    behavior:url(-ms-transform.htc);
     -moz-transform: rotate(90deg);
     /*-webkit-transform: rotate(90deg);
     -o-transform: rotate(90deg);
