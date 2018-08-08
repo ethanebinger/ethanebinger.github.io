@@ -47,24 +47,26 @@ function init_bikemap() {
             .attr("id", "cells");
 
         // BlueBikes Trips
-        d3.csv("bluebikes_tripmap/"+filedate+'-tripdata.csv', function(trips) {
-            var linksByOrigin = {},
+        d3.csv("bluebikes_tripmap/"+filedate+'-tripdata.csv', function(trips) {            
+            var linksByOrigin = trips[0],
                 countByStation = {},
                 locationByStation = {},
                 positions = [];
 
+            var station_ids = Object.keys(linksByOrigin);
+            for (var i=0; i<station_ids.length; i++) {
+                var id = station_ids[i];
+                for (var t=0; t<linksByOrigin[id].length; t++) {
+                    var origin = linksByOrigin[id][t].source,
+                        destination = linksByOrigin[id][t].target;
+                    countByStation[origin] = (countByStation[origin] || 0) + 1;
+                    countByStation[destination] = (countByStation[destination] || 0) + 1;
+                };
+            };
+
             var arc = d3.geo.greatArc()
                 .source(function(d) { return locationByStation[d.source]; })
                 .target(function(d) { return locationByStation[d.target]; });
-
-            trips.forEach(function(trip) {
-                var origin = trip['start station id'],
-                    destination = trip['end station id'],
-                    links = linksByOrigin[origin] || (linksByOrigin[origin] = []);
-                links.push({source: origin, target: destination});
-                countByStation[origin] = (countByStation[origin] || 0) + 1;
-                countByStation[destination] = (countByStation[destination] || 0) + 1;
-            });
 
             d3.json('https://gbfs.bluebikes.com/gbfs/en/station_information.json', function(stations) {
                 stations = stations.data.stations;
