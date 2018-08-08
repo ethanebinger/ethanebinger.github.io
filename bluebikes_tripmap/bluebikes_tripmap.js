@@ -47,7 +47,7 @@ function init_bikemap() {
             .attr("id", "cells");
 
         // BlueBikes Trips
-        d3.csv("bluebikes_tripmap/"+filedate+'-tripdata.csv', function(trips) {            
+        d3.json("bluebikes_tripmap/"+filedate+'-tripdata.json', function(trips) {            
             var linksByOrigin = trips[0],
                 countByStation = {},
                 locationByStation = {},
