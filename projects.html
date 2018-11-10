@@ -45,78 +45,7 @@
                     </div>
 
                     <div id="BlueBikes" class="tabcontent">
-                        <h3>Exploring Blue Bikes Trips</h3>
-                        <p>
-                            July 22, 2018
-                        </p>
-                        <p>
-                            BlueBikes in the sole operating bike share in the communities of Boston, Brookline, Cambridge, and Somerville. The bike share service launched under the name Hubway in 2011 with 60 bicycles. It originally only served Boston, but has since expanded due to high demand. Now named BlueBikes following an $18 million donation by Blue Cross Blue Shield, the docked bike share has over 200 stations and over 1,800 bicycles in operation. 
-                        </p>
-                        <p>
-                            As a resident of Somerville who does not own a car I typically get around by foot, public transit, or TNC. With the nice summer weather upon us I decided to try using the bike share myself. Earlier this month I biked from Harvard to the Museum of Fine Arts and back. Donning a helment that had been collecting dust in my closet I walked down the block to the nearest station and unlocked a bicycle via the BlueBikes app (the recommended method). Getting a bike was surprisingly simple, and getting across the Charles River to my destination was almost as easy; Cambridge has many bicycle lanes, sharrows, and paths to use.
-                        </p>
-                        <p>
-                            My day trip was enjoyable and short (only 3 miles each direction), but I was curious about how others are using the region's bike share. Where are the majority of trips originating and ending? When are people using bike share the most (i.e. are they peak periods during the day, how drastic are seasonal varations in ridership)? Are the majority of trips to/from home and work? Are most users members of BlueBikes or occasional users and tourists? What regions are not properly serviced by bike share, and why?
-                        </p>
-                        <p>
-                            To begin answering these questions I found an open source repository of BlueBike's historical trip data and current network status. Monthly trips dating back to January 2015 and yearly trips from 2011-2014 can be downloaded from here: <a href="https://s3.amazonaws.com/hubway-data/index.html">https://s3.amazonaws.com/hubway-data/index.html</a>. All data is anonymized by user, but does have rich information on the origin and destination of each trip, including time of day.
-                        </p>
-                        <p>
-                            I started playing around with data from earlier this year, and threw together an interactive map (built with D3) showing where trips originating at each station go to.
-                        </p>
-                        <div id="bluebikes_tripmap">
-                            <h2>
-                                <span id="trips_date"></span><br>
-                                <span id="cur_station">BlueBikes Trips</span><br>
-                                <span id="num_trips"></span><br>
-                                <span id="freq_dest"></span>
-                            </h2>
-                            <div class="dropdown" style="float:right;">
-                                <button class="dropbtn">Date</button>
-                                <div class="dropdown-content">
-                                    <a href="#" id="201807">July, 2018</a>
-                                    <a href="#" id="201806">June, 2018</a>
-                                    <a href="#" id="201805">May, 2018</a>
-                                    <a href="#" id="201804">April, 2018</a>				
-                                    <a href="#" id="201803">March, 2018</a>
-                                    <a href="#" id="201802">February, 2018</a>
-                                    <a href="#" id="201801">January, 2018</a>
-                                </div>
-                            </div>
-                            <h1 id="loading">LOADING...</h1>
-                        </div>
-                        <p>
-                            A picture is starting to form showing that most trips are around MIT and Harvard University, although there are many downtown and in Back Bay. Other regions have little to no activity, however. Many stations in East Boston, Roxbury, and Dorchester are seeing under 100 trips per month in the spring, which is drastically lower than the +7,000 trips leaving MIT in April. Is this due to the lack of bicycle infrastructure or other factors? Or a combination of both? Somerville does not have many bicycle stations but plenty of trips are originating there.
-                        </p>
-                        <p>
-                            Clearly there is much more to explore here. This map does not even get into the GBFS (General Bikeshare Feed Specification) data that is updated live and published at the following web addresses:
-                            <ul>
-                                <li>
-                                    <a href="https://gbfs.bluebikes.com/gbfs/en/system_regions.json">https://gbfs.bluebikes.com/gbfs/en/system_regions.json</a>
-                                </li>
-                                <li>
-                                    <a href="https://gbfs.bluebikes.com/gbfs/en/station_information.json">https://gbfs.bluebikes.com/gbfs/en/station_information.json</a>
-                                </li>
-                                <li>
-                                    <a href="https://gbfs.bluebikes.com/gbfs/en/station_status.json">https://gbfs.bluebikes.com/gbfs/en/station_status.json</a>
-                                </li>
-                                <li>
-                                    <a href="https://gbfs.bluebikes.com/gbfs/en/system_alerts.json">https://gbfs.bluebikes.com/gbfs/en/system_alerts.json</a>
-                                </li>
-                            </ul>
-                            I plan to dive into all of this in the coming weeks, so stay tuned for more!
-                        </p>
-                        <p>
-                            References:
-                            <ul>
-                                <li>
-                                    <a href="https://www.bluebikes.com/">https://www.bluebikes.com/</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.bizjournals.com/boston/news/2018/03/07/hubway-bike-sharing-system-has-a-new-name-thanks.html">https://www.bizjournals.com/boston/news/2018/03/07/hubway-bike-sharing-system-has-a-new-name-thanks.html</a>
-                                </li>
-                            </ul>
-                        </p>
+                        <iframe width="100%" height="800px" src="https://www.arcgis.com/apps/MapJournal/index.html?appid=ad0d0f171ba54386824629b79d2b3b6b" frameborder="0" scrolling="no"></iframe>
                     </div>
 
                     <div id="OneWayStreets" class="tabcontent">
@@ -126,8 +55,8 @@
                     </div>
                     <div id="BingTravelTime" class="tabcontent">
                         <h3>Web Map APIs: Querying Travel Times</h3>
-                        <p>Details coming soon!</p>
-                        <p>In the meantime, check out the Github repo with details on the project <a href="https://github.com/ethanebinger/BingTravelTime">here</a>.</p>
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUv3jC3re51nhfzUEOm_mrRtbwujEMFN61zZICcQU1sL9KyYZ5wge3g6bdkR8h2zGeTgJr6H2BqqCj/embed?start=false&loop=false&delayms=30000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <p>Also, check out the Github repo with details on the project <a href="https://github.com/ethanebinger/BingTravelTime">here</a>.</p>
                     </div>
                     <div id="Survivor" class="tabcontent">
                         <h3>Fantasy Survivor</h3>
@@ -136,7 +65,7 @@
                         <p>And the working application, with results from Season 36: Ghost Island can be found <a href="http://ethanebinger.com/Fantasy-Survivor/GhostIsland/results.html">here</a>. Congratulations to Josh for winning our season's tourney!</p>
                         <!--
                         <p>
-                            A couple years ago my friends got my addicted to the TV show Survivor. Now on its 37th season, Survivor has been on the air since ____. _____.
+                            A couple years ago my friends got my addicted to the TV show Survivor.
                         </p>
                         <p>
                             Weekly watch parties started as two people catching up on our week with Survivor in the background. We would find the weirdest beers at the local store to try and then watch the Wednesday Night Rivalry hockey game after the episode. Slowly, our Wednesday evening tradition evolved. Criticisms of players on the island became thorough analysis of moves they should have made. _____. Being competetive people we decided to start hedging bets on the game. Who will win the immunity challenge? Who will be voted off? Who will be the final Survivor? 
