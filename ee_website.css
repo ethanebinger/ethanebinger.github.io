@@ -263,9 +263,9 @@ html, body, #main {
 
 .footer a img{
     float: right;
-    height: 28px;
-    margin: 2px;
-    margin-right: 15px;
+    height: 29px;
+    margin: 6.5px;
+    /*margin-right: 15px;*/
 }
 
 /****************/
