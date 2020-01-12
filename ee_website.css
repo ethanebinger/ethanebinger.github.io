@@ -90,8 +90,8 @@ html, body, #main {
 #about_page {
     display: table;
     margin: 0 auto;
-    /*width: 100%;*/
-    width: 480px;
+    width: 100%;
+    /*width: 480px;*/
     height: 100%;
     padding: 60px 0 32px 0;
 }
@@ -113,7 +113,13 @@ html, body, #main {
 }
 
 #ethan_description {
-    /*text-align: center;*/
+    text-align: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#ethan_description > p, h3 {
+    text-align: left;
 }
 
 /****************/
