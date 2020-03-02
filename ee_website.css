@@ -104,9 +104,9 @@ html, body, #main {
     padding-top: 30px;
 }
 
-#ethan {
+#ethan_img {
     width: 400px;
-    height: 420px;
+    height: auto;
     display: table;
     margin: 0 auto;
     padding-top: 30px;
@@ -204,32 +204,38 @@ html, body, #main {
     box-sizing: border-box;
 }
 
-.gallery {
-    /*border: 1px solid #ccc;*/
-    margin-bottom: 10px;
-    overflow: hidden;
+* {
+    box-sizing: border-box;
 }
 
-.gallery img {
+.photos_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.photos_column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.photos_column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.photos_gallery img {
     width: 100%;
     height: auto;
     image-orientation: from-image;
     border: 1px solid #ccc;
 }
 
-.gallery img:hover {
-    border: 1px solid #777;
-}
-
 .desc {
     padding: 10px;
     text-align: center;
 }
-
-* {
-    box-sizing: border-box;
-}
-
+/*
 .responsive {
     padding: 0 6px;
     float: left;
@@ -241,7 +247,7 @@ html, body, #main {
         width: 100%;
     }
 }
-
+*/
 .rotate90 {
     behavior:url(-ms-transform.htc);
     -moz-transform: rotate(90deg);
