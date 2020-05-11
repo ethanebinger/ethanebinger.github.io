@@ -1,0 +1,131 @@
+/***************/
+/*	Home Page  */
+/***************/
+
+#main_home {
+    height: 100%; 
+    padding: 0px; 
+    margin: 0px;
+	min-height:100%;
+    position:relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 32px 0;
+    z-index: 0;
+}
+
+.intro_text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    z-index: 100;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.intro_text_2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 48%;
+    z-index: 100;
+    color: #fff;
+}
+
+/*******************/
+/*	Ceramics Page  */
+/*******************/
+
+#ceramics_page {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 32px 0;
+}
+
+#ceramics_page h2  {
+    display: table;
+    margin: auto; 
+    text-align: center;
+    letter-spacing: 5px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#photos {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.photos_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.photos_column {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.photos_column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.photos_gallery img {
+    width: 100%;
+    height: auto;
+    image-orientation: from-image;
+    border: 1px solid #ccc;
+}
+
+.desc {
+    padding: 10px;
+    text-align: center;
+}
+
+.rotate90 {
+    behavior:url(-ms-transform.htc);
+    -moz-transform: rotate(90deg);
+    /*-webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);*/
+}
+
+/****************/
+/*	d3 Tooltip  */
+/****************/
+.d3-tip {
+	line-height: 1;
+	font-weight: bold;
+	padding: 12px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 2px;
+	text-align: left;
+	position: absolute;
+	z-index: 100;
+	font-family: "Trebuchet MS", sans-serif;
+}
+
+
+/***************************************************/
+/*      Hide Some of the Leaflet Map Controls      */
+/***************************************************/
+
+.leaflet-control-zoom {
+    visibility: hidden;
+}
