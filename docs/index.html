@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ethan Ebinger - Home</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+        
+        <!-- jQuery -->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+        
+        <!-- D3 -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        
+        <!-- OpenLayers -->
+        <!--<script src="https://openlayers.org/en/v4.4.1/build/ol.js"></script>-->
+        
+        <!-- Stylesheet and Javascript -->
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/custom.css">
+        <script src="js/ee_website.js" type="text/javascript"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114047184-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-114047184-1');
+	</script>
+    </head>
+    <body>
+        <!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<div class="inner">
+
+					<!-- Logo -->
+						<a href="index.html" class="logo">
+							<span class="title">Ethan Ebinger</span>
+						</a>
+
+					<!-- Nav -->
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+
+				</div>
+			</header>
+
+			<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="ceramics.html">Ceramics</a></li>
+				</ul>
+			</nav>
+					
+			<!-- Main -->
+			<div id="main" height="100%">
+				<div id="main_home" >
+					<a href="./about.html">
+						<h1 class="intro_text">ETHAN EBINGER</h1>
+						<p class="intro_text_2">GIS || Transportation || Ceramics</p>
+					</a>
+					
+					<div id="map">
+					</div>
+				</div>
+			</div>
+			
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<section>
+						<ul class="icons">
+							<li><a href="https://twitter.com/EzSquared" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+							<!--<li><a href="https://www.facebook.com/ethanebinger" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+							<li><a href="https://www.instagram.com/ethanebinger/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="http://www.github.com/ethanebinger" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="http://www.linkedin.com/ethanebinger" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</section>
+				</div>
+			</footer>
+
+        </div>
+ 		
+		<!-- Scripts -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/browser.min.js"></script>
+		<script src="js/breakpoints.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
+        
+		
+		
+		<!--
+		<div id="main">
+            
+            <a href="./about.html">
+                <h1 class="intro_text">ETHAN EBINGER</h1>
+                <p class="intro_text_2">GIS || Transportation || Ceramics</p>
+            </a>
+            
+            <div id="map">
+            </div>
+            
+            <div id="header">
+                <div id="header_title">
+                    <h3>
+                        <a href="./index.html" class="link">Ethan Ebinger</a>
+                    </h3>
+                </div>
+                <nav id="header_buttons">
+                    <a href="./about.html" class="link">About</a>
+                    <a href="./projects.html" class="link">Projects</a>
+                    <a href="./ceramics.html" class="link">Ceramics</a>
+                </nav>
+            </div>
+
+            <div class="footer" id="footer_map">
+                <div id="social_links">
+                    <a href="http://www.github.com/ethanebinger">
+                       <img src="images/social_media_logos/GitHub-Mark-Light-120px-plus.png"/>
+                    </a>
+                    <a href="http://www.linkedin.com/in/ethan-ebinger">
+                        <img src="images/social_media_logos/LinkedIn_81_TM.png"/>
+                    </a>
+                    <a href="https://twitter.com/EzSquared">
+                         <img src="images/social_media_logos/TwitterLogo_blue.png"/>
+                    </a>
+                    <a href="https://www.instagram.com/ethanebinger/">
+						<img src="images/social_media_logos/glyph-logo_May2016_bodywhite.png"/>
+					</a>
+                    <a href="https://www.facebook.com/ethanebinger">
+                       <img src="images/social_media_logos/FB-f-Logo__blue_100.png"/>
+                    </a>
+                </div>
+            </div>
+            
+        </div>-->
+ 
+        <script type="text/javascript">
+            $(document).ready(function() {
+                init();
+            });
+		</script>
+        
+    </body>
+</html>
