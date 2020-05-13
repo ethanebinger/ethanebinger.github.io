@@ -67,20 +67,19 @@
 			</nav>
 					
 			<!-- Main -->
-			<div id="main" height="100%">
-				<div id="main_home" >
+			<div id="main_home" >
+				<div id="intro_text">
 					<a href="./about.html">
-						<h1 class="intro_text">ETHAN EBINGER</h1>
-						<p class="intro_text_2">GIS || Transportation || Ceramics</p>
+						<h1>ETHAN EBINGER</h1>
+						<p>GIS || Transportation || Ceramics</p>
 					</a>
-					
-					<div id="map">
-					</div>
+				</div>
+				<div id="map">
 				</div>
 			</div>
 			
 			<!-- Footer -->
-			<footer id="footer">
+			<footer id="footer" class="footer_home">
 				<div class="inner">
 					<section>
 						<ul class="icons">
@@ -155,6 +154,9 @@
             $(document).ready(function() {
                 init();
             });
+			$(window).resize(function() {
+				$("#map").height($(window).height() - $("#header").height() - $("#footer").height()); 
+			}).resize();
 		</script>
         
     </body>
